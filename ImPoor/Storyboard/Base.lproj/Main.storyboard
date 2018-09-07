@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImPoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ju8-iy-DbW">
+                                <rect key="frame" x="16" y="706" width="343" height="39"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="I Am Rich!">
+                                    <color key="titleColor" red="0.87114846950000002" green="0.86694002280000004" blue="0.8753569162" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pxd-cI-g6E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Im Poor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dy6-Iy-ms0">
+                                <rect key="frame" x="16" y="64" width="343" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.87114846953094505" green="0.86694002281823512" blue="0.87535691624365486" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImPoor" translatesAutoresizingMaskIntoConstraints="NO" id="ipA-Cb-WYv">
+                                <rect key="frame" x="-68.666666666666686" y="150" width="512.33333333333337" height="512"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Cristian Lopez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rty-e8-Etd">
+                                <rect key="frame" x="16" y="805" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rty-e8-Etd" firstAttribute="top" secondItem="ju8-iy-DbW" secondAttribute="bottom" constant="60" id="135-vQ-vL4"/>
+                            <constraint firstItem="ipA-Cb-WYv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E2t-52-GUc"/>
+                            <constraint firstItem="ipA-Cb-WYv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Iys-PD-xxV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dy6-Iy-ms0" secondAttribute="trailing" constant="16" id="KHl-9A-Rur"/>
+                            <constraint firstItem="ju8-iy-DbW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LxR-gT-LJc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ju8-iy-DbW" secondAttribute="trailing" constant="16" id="N8S-dk-6jN"/>
+                            <constraint firstItem="Rty-e8-Etd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cOG-QR-tVM"/>
+                            <constraint firstItem="dy6-Iy-ms0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cZH-T3-qJ9"/>
+                            <constraint firstItem="ipA-Cb-WYv" firstAttribute="top" secondItem="dy6-Iy-ms0" secondAttribute="bottom" constant="44" id="hpO-z7-pk9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rty-e8-Etd" secondAttribute="trailing" constant="16" id="lg0-Vr-RQT"/>
+                            <constraint firstItem="ju8-iy-DbW" firstAttribute="top" secondItem="ipA-Cb-WYv" secondAttribute="bottom" constant="44" id="rbf-so-0Ly"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="ju8-iy-DbW" id="t7L-qj-VXC"/>
+                        <outlet property="imageView" destination="ipA-Cb-WYv" id="ilH-jZ-lfV"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="wcU-HH-hAs"/>
+                        <outlet property="textLabel" destination="dy6-Iy-ms0" id="giQ-Hr-bdd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ImPoor" width="512" height="512"/>
+    </resources>
+</document>
